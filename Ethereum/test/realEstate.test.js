@@ -31,7 +31,10 @@ describe("realEstate", () => {
 
   it("can change the owner", async () => {
     await realEstate.methods
-      .changeOwner(0, accounts[1])
-      .send({ from: accounts[0] });
+      .addProperty("131", "1311")
+      .send({ from: accounts[0], gas: 6721975, gassPrice: 20000000000 });
+    await realEstate.methods
+      .changeOwner("0", accounts[1])
+      .send({ from: accounts[0], gas: 1000000 });
   });
 });
