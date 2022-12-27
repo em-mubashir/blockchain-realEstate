@@ -30,9 +30,8 @@ describe("realEstate", () => {
   });
 
   it("can change the owner", async () => {
-    console.log("propertyArray", propertyArray, "accounts", accounts);
     await realEstate.methods
-      .changeOwner("0", accounts[1])
+      .changeOwner(0, accounts[1])
       .send({ from: accounts[0] });
   });
 });
