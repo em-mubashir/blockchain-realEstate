@@ -1,0 +1,20 @@
+{
+  "name": "realestate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ganache": "^7.7.2",
+    "mocha": "^10.2.0",
+    "solc": "^0.8.17",
+    "web3": "^1.8.1"
+  },
+  "devDependencies": {
+    "hardhat": "^2.12.4"
+  }
+}
